@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the header */
+header {
+  background-color: transparent;
+  color: aliceblue;
+  padding: 10px 20px;
+  position: fixed; /* Fixed position ensures it stays at the top */
+  width: 100%; /* Full width of the viewport */
+  top: 0; /* Aligns to the top of the viewport */
+  z-index: 1000; /* Ensures it's above other content */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Center align text and elements in the header */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+  width: 60px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.log-in {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.log-in h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.log-in .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: aliceblue;
+  padding: 20px 50px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: aliceblue;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: aliceblue;
+  margin-right: 2.5px;
+}
+
+.remember-forgot a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.log-in .btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: aliceblue;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.log-in .regsister-link {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.log-in .regsister-link p a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.log-in .regsister-link p a:hover {
+  text-decoration: underline;
+}
+
+.log-out {
+  width: 200px;
+  background-color: transparent;
+  color: aliceblue;
+
+  padding: 30px 40px;
+  margin-left: auto;
+}
+
+.log-out .btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: aliceblue;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.main-para {
+  font-size: 60px;
+  width: 700px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.signuperror {
+  font-size: 30px;
+  width: 300px;
+  background-color: rgb(129, 21, 13);
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.signupsuccess {
+  font-size: 30px;
+  width: 300px;
+  background-color: rgb(13, 129, 52);
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
